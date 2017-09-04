@@ -125,4 +125,6 @@ nmap XX :q<CR>
 nmap <2-LeftMouse> g<C-]>
 nmap <MiddleMouse> #
 
+set expandtab
+set sw=4 ts=4
 
