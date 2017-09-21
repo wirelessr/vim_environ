@@ -22,3 +22,7 @@ lt : list all tags by ctrlp plugin
 ## Text matching
 F3 : use rgrep, and there is a plugin let quickfix be the same as ctrlp
 
+## Highlight multiple words
+<leader>m : use a free color group to highlight the current cursor
+[number]<leader>m : use the specific group
+<leader>* : jump to the next position of current group

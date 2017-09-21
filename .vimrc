@@ -29,6 +29,7 @@ Plugin 'taglist.vim'
 Plugin 'gnattishness/cscope_maps'
 Plugin 'MattesGroeger/vim-bookmarks'
 Plugin 'yssl/QFEnter'
+Plugin 'mihais/vim-mark'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -127,4 +128,14 @@ nmap <MiddleMouse> #
 
 set expandtab
 set sw=4 ts=4
+
+if has("autocmd")
+    " Highlight TODO, FIXME, NOTE, etc.
+    if v:version > 701
+        autocmd Syntax * call matchadd('Todo', '\W\zs\(TODO\|FIXME\|CHANGED\|XXX\|BUG\|HACK\)')
+        autocmd Syntax * call matchadd('Debug', '\W\zs\(NOTE\|INFO\|IDEA\)')
+    endif
+endif
+
+let g:mwDefaultHighlightingPalette = 'extended'
 
