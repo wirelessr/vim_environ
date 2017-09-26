@@ -139,3 +139,8 @@ endif
 
 let g:mwDefaultHighlightingPalette = 'extended'
 
+if &diff
+    colo evening
+endif
+
+
