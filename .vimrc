@@ -145,4 +145,5 @@ if &diff
     colo evening
 endif
 
+hi CursorLine term=underline cterm=NONE gui=NONE ctermbg=8
 
