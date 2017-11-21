@@ -13,7 +13,8 @@ Plugin 'gmarik/Vundle.vim'
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
-Plugin 'Lokaltog/vim-powerline'
+"Plugin 'Lokaltog/vim-powerline'
+Plugin 'vim-airline/vim-airline'
 Plugin 'Yggdroot/indentLine'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdcommenter'
@@ -62,7 +63,8 @@ let NERDTreeWinSize=25
 
 "缩进指示线"
 let g:indentLine_char='|'
-let g:indentLine_enabled = 0
+let g:indentLine_enabled = 1
+nmap <f4> :IndentLinesToggle<CR>:set nonu<CR>
 
 "autopep8设置"
 let g:autopep8_disable_show_diff=1
@@ -147,3 +149,11 @@ endif
 
 hi CursorLine term=underline cterm=NONE gui=NONE ctermbg=8
 
+set nu
+set nowrap
+
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+nnoremap EE :bn<CR>
+nnoremap WW :bp<CR>
