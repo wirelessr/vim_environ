@@ -148,6 +148,7 @@ if &diff
 endif
 
 hi CursorLine term=underline cterm=NONE gui=NONE ctermbg=8
+hi Search cterm=NONE ctermfg=white ctermbg=gray
 
 set nu
 set nowrap
