@@ -158,3 +158,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 nnoremap EE :bn<CR>
 nnoremap WW :bp<CR>
+
+set wildmenu
+set wildmode=list:longest
+
