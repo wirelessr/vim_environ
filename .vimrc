@@ -31,6 +31,7 @@ Plugin 'gnattishness/cscope_maps'
 Plugin 'MattesGroeger/vim-bookmarks'
 Plugin 'yssl/QFEnter'
 Plugin 'mihais/vim-mark'
+Plugin 'vim-scripts/restore_view.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -76,8 +77,9 @@ let g:ctrlp_regexp = 1
 let Grep_Default_Filelist = '*.py *.proto'
 
 " Enable folding
+" set foldmethod=syntax
+set foldmethod=indent
 set foldlevel=99
-set foldmethod=syntax
 
 nnoremap <space> za
 
