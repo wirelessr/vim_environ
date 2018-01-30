@@ -12,7 +12,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'Lokaltog/vim-powerline'
 Plugin 'vim-airline/vim-airline'
 Plugin 'Yggdroot/indentLine'
@@ -73,6 +73,7 @@ let g:autopep8_disable_show_diff=1
 let g:ctrlp_by_filename = 1
 let g:ctrlp_custom_ignore = {'file': '\v(\.proto|\.ini|\.yml|\.py)@<!$'}
 let g:ctrlp_regexp = 1
+let g:ctrlp_clear_cache_on_exit = 0
 
 let Grep_Default_Filelist = '*.py *.proto'
 
