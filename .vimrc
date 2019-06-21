@@ -83,6 +83,8 @@ set foldmethod=indent
 set foldlevel=99
 
 nnoremap <space> za
+nnoremap zF :set foldlevel=99<CR>
+nnoremap zf :set foldlevel=1<CR>
 
 let g:SimpylFold_docstring_preview=1
 
