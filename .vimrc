@@ -170,3 +170,5 @@ set wildmode=list:longest
 noremap <leader>y "ly
 nnoremap <leader>p "lp
 nnoremap <leader>P "lP
+
+nnoremap js :%!python -m json.tool<CR>
