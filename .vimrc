@@ -172,3 +172,6 @@ nnoremap <leader>p "lp
 nnoremap <leader>P "lP
 
 nnoremap js :%!python -m json.tool<CR>
+
+" Remove trailing whitespace
+autocmd BufWritePre * %s/\s\+$//e
