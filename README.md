@@ -1,7 +1,7 @@
 This vim environment is just for python and made by my usage habit. If you have any good recommendation, please feel free to let me know.
 
 # How to generate pytags
-find . -name *.py -print | xargs ptags.py
+find . -name "*.py" -print | xargs ptags.py
 
 # Avoid vi to use this vimrc (because there are lots of warnings)
 alias vi='vi -u NONE'
